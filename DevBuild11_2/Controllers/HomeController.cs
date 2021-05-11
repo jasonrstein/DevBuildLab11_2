@@ -40,8 +40,10 @@ namespace DevBuild11_2.Controllers
             ViewData["email"] = email;
             ViewData["gender"] = gender;
             ViewData["Prefix"] = prefix;
-            return Content($"Thank you {prefix} {firstname} {lastname} for registering "
-                           + $"We have your gender listed as {gender}.");
+            return Content($"Thank you {prefix}{firstname} {lastname} for registering. "
+                           + $"We have your gender listed as {gender}.\n"
+                           + "You will be contacted my a ninja assasin with future details.\n"
+                           + "If the assassin does not kill you, then you have made it to the second round interview.");
         }
 
         public IActionResult Privacy()
