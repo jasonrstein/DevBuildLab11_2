@@ -12,6 +12,10 @@ a {
   color: #0366d6;
 }
 
+.confirmedPage {
+    background-color: #dc3545
+}
+
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
@@ -28,6 +32,7 @@ a {
 -------------------------------------------------- */
 html {
   font-size: 14px;
+  background-color: antiquewhite
 }
 @media (min-width: 768px) {
   html {

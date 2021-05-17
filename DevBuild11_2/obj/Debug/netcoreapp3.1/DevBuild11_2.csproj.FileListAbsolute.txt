@@ -8,7 +8,6 @@ C:\Workgroup\DevBuild11_2\DevBuild11_2\bin\Debug\netcoreapp3.1\DevBuild11_2.dll
 C:\Workgroup\DevBuild11_2\DevBuild11_2\bin\Debug\netcoreapp3.1\DevBuild11_2.pdb
 C:\Workgroup\DevBuild11_2\DevBuild11_2\bin\Debug\netcoreapp3.1\DevBuild11_2.Views.dll
 C:\Workgroup\DevBuild11_2\DevBuild11_2\bin\Debug\netcoreapp3.1\DevBuild11_2.Views.pdb
-C:\Workgroup\DevBuild11_2\DevBuild11_2\obj\Debug\netcoreapp3.1\DevBuild11_2.csprojAssemblyReference.cache
 C:\Workgroup\DevBuild11_2\DevBuild11_2\obj\Debug\netcoreapp3.1\DevBuild11_2.AssemblyInfoInputs.cache
 C:\Workgroup\DevBuild11_2\DevBuild11_2\obj\Debug\netcoreapp3.1\DevBuild11_2.AssemblyInfo.cs
 C:\Workgroup\DevBuild11_2\DevBuild11_2\obj\Debug\netcoreapp3.1\DevBuild11_2.csproj.CoreCompileInputs.cache

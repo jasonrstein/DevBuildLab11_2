@@ -2,32 +2,59 @@
 @{
     ViewData["Title"] = "Registration";
 }
-
+<body style="background-color: khaki"></body>
 <h1>Registration</h1>
 
+<style>
+p.double {border-style: double;}
+</style>
+
 <form method="post" action="/home/registrationconfirmed">
-    
+
     Last Name: <br /><input type="text" name="lastName" /><br />
     First Name: <br /><input type="text" name="firstName" /><br />
     Prefix: <br />
-            <label for="prefix"></label>
-            <select id="prefix">
-                <option value="Mr.">Mr.</option>
-                <option value="Mrs.">Mrs.</option>
-                <option value="Ms.">Ms.</option>
-                <option value="Dr.">Dr.</option>
-                <option value="" selected>  </option>
-            </select><br />
+    <label for="prefix"></label>
+    <select id="prefix">
+        <option value="Mr.">Mr.</option>
+        <option value="Mrs.">Mrs.</option>
+        <option value="Ms.">Ms.</option>
+        <option value="Dr.">Dr.</option>
+        <option value="" selected>  </option>
+    </select><br />
     Password: <br /><input type="password" name="password" /><br />
     Email: <br /><input type="email" name="email" /><br />
-    Gender: <br />
-            <input type="radio" id="male" name="gender" value="male" />
-            <label for="male">Male</label><br />
-            <input type="radio" id="female" name="gender" value="female" />
-            <label for="female">Female</label><br />
-            <input type="radio" id="other" name="gender" value="other" />
-            <label for="other">Other</label><br />
+    Phone Number: <br /><input type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/><br />
+    <h6 style="font-size: smaller">&nbsp&nbsp&nbsp(123-456-7890)</h6><br />
     
+    Gender: <br />
+    <p class="double">
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br />
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label><br />
+        </p>
+    <fieldset>
+        <legend>Origin</legend>
+    <p class="double">
+        <input type="radio" id="wizard" name="origin" value="wizard" />
+        <label for="male">Wizard</label><br />
+        <input type="radio" id="witch" name="origin" value="witch" />
+        <label for="female">Witch</label><br />
+        <input type="radio" id="half-human" name="origin" value="halfhuman" />
+        <label for="male">Half-Human</label><br />
+        <input type="radio" id="elf" name="origin" value="elf" />
+        <label for="male">Elf</label><br />
+        <input type="radio" id="troll" name="origin" value="troll" />
+        <label for="male">Troll</label><br />
+        <input type="radio" id="demon" name="origin" value="demon" />
+        <label for="male">Demon</label><br />
+        <input type="radio" id="goblin" name="origin" value="goblin" />
+        <label for="male">Goblin</label><br />
+    </p>
+    </fieldset>
     <input type="submit" />
 </form>
 

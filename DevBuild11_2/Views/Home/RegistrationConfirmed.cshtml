@@ -1,7 +1,26 @@
-﻿
+﻿@model User
+
 @{
     ViewData["Title"] = "RegistrationConfirmed";
+        
 }
+<body style="background-color: khaki">
 
-<h1>RegistrationConfirmed</h1>
+    <h1>RegistrationConfirmed</h1>
 
+
+
+    <h2 style="color:brown">
+
+        First Name: @Model.firstName<br />
+        Last Name: @Model.lastName<br />
+        Password: @Model.password<br />
+        Email: @Model.email <br />
+        Gender: @Model.gender <br />
+        Origin: @Model.origin <br />
+        Telephone: @Model.telephone <br />
+
+    </h2>
+
+    <h1 style="text-align:center"><a href="/home">Click here to return to home page</a></h1>
+</body>
