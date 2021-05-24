@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "CreateForm";
+}
+
+<h1>Add New Item to Inventory</h1>
+
+<form method="post" action="/home/create">
+    Name        <input type="text" name="name" /><br />
+    Price       <input type="text" name="price" /><br />
+    Category    <input type="text" name="category" /><br />
+
+    <input type="submit" value="Add to Inventory" />
+</form>

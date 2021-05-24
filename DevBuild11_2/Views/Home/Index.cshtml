@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<Product>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -8,4 +9,34 @@
     
 </div>
 
-<h1 style="text-align:center"><a href="/home/registration">Please Click Here to Register</a></h1>
+<h1 style="text-align:center"><a href="/home/registration">Please Click Here to Register</a></h1><br />
+
+<h2>Magical Item Inventory: </h2>
+
+<table style="width:75%">
+    <tr>
+        <th style="width:25%">Name</th>
+        <th style="width:25%">Price</th>
+        <th style="width:25%">Category</th>
+    </tr>
+    <tbody>
+
+        @foreach (Product cat in Model)
+        {
+            <tr>
+                <td>@cat.name</td>
+                <td>@cat.price</td>
+                <td>@cat.category </td>
+                <td>   
+                    <a href="/home/editproduct/@cat.id" style="font-size:x-small" class="btn btn-info"> Edit</a>
+                    <a href="/home/delete/@cat.id" style="font-size:x-small" class="btn btn-danger"> Delete</a>
+                </td>
+                
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+<br /><a href="/home/CreateForm"><h4>Click here to Add New Item to Inventory</h4></a>
+

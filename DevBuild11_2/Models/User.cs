@@ -15,5 +15,6 @@ namespace DevBuild11_2.Models
         public string telephone { get; set; }
         public string gender { get; set; }
         public string origin { get; set; }
+        public string prefix { get; set; }
     }
 }

@@ -40,9 +40,29 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.15, )"
+            },
+            "Microsoft.Build.Tasks.Core": {
+              "target": "Package",
+              "version": "[16.9.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "NEST": {
+              "target": "Package",
+              "version": "[7.12.1, )"
             }
           },
           "imports": [

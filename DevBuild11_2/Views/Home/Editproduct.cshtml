@@ -1,0 +1,14 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Editproduct";
+}
+
+<h1>Edit Product</h1>
+    <form method="post" action="/home/edit">
+    Name of Product <input type="text" value="@Model.name" name="name" /><br />
+    Price           <input type="text" value="@Model.price" name="price" /><br />
+    Category        <input type="text" value="@Model.category" name="category" /><br />
+
+    <input type="hidden" name="id" value="@Model.id" />
+    <input type="submit" value="Update Inventory"/>
+    </form>
